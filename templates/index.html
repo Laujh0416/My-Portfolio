@@ -1,0 +1,263 @@
+{%include "header.html"%}
+<nav class="navbar navbar-expand-lg bg-body-tertiary rounded nav_bar" aria-label="Thirteenth navbar example">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+      <ul class="navbar-nav col-lg-8 justify-content-lg-center mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#expertise">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#achivements">Achivements</a>
+        </li>
+        <li class="nav-item me-5">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item ms-5 small_hire">
+          <button class="btn btn-warning text-white" onclick='window.open("https://mail.google.com/mail/u/0/#sent?compose=new", "_blank")'>Hire Me</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="intro">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-6 adjust-padding mt-5">
+        <p class="text-warning fw-bold fs-4">Hello, I am</p>
+        <h1 class="fw-bolder fs-1">Lau Jia Hui</h1>
+        <p class="fw-bold">Litigation Lawyer, Economist, Programmer</p>
+        <p class="">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis deleniti dolore, in ad nulla quia distinctio sit iure rerum quo, placeat nobis iusto natus alias aliquam, nesciunt commodi sapiente fugiat!
+        </p>
+        <button type="button" class="btn btn-warning btn-lg text-white">Download CV</button>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img src="{{ url_for('static', filename='assets/photo3.png') }}" class="img-fluid" alt="Profile Picture">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-6 image_padding image_padding_small">
+        <img src="{{ url_for('static', filename='assets/photo5.jpg') }}" class="image_shadow image_size" alt="Profile Picture">
+      </div>
+      <div class="col-12 col-md-6 adjust_padding_second adjust_padding_second_small">
+        <p class="fw-bold fs-1">Biography</p>
+        <p class="text_align">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam placeat aut doloremque fugiat expedita hic repellat soluta praesentium nemo facilis dolore laudantium, incidunt adipisci molestiae totam in. Aliquid, nam molestias?</p>
+        <table>
+          <tr>
+            <td><strong>Birthday</strong></td>
+            <td><strong>:</strong>16th April 2001</td>
+            <td><strong>E-mail</strong></td>
+            <td><strong>:</strong>lau010416@gmail.com</td>
+          </tr>
+          <tr>
+            <td><strong>Age</strong> </td>
+            <td><strong>:</strong>24</td>
+            <td><strong>Phone</strong></td>
+            <td><strong>:</strong>601120916305</td>
+          </tr>
+          <tr>
+            <td><strong>Major</strong></td>
+            <td><strong>:</strong>Bachelor of Law (Hons.)</td>
+            <td><strong>Grauduate</strong></td>
+            <td><strong>:</strong>Multimedia University, Melacca Campus</td>
+          </tr>
+          <tr>
+            <td><strong>Internship Experience</strong></td>
+            <td><strong>:</strong>Yes</td>
+            <td><strong>Residence</strong></td>
+            <td><strong>:</strong>Johor, Malaysia</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="container-fluid">
+    <div class="text_padding_third">
+      <div class="text_container">
+        <p class="fs-1 fw-bolder text_center">My Knowledge</p>
+        <div class="line"></div>
+      </div>
+      <p class="text_center">A brief of Interests</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 text-center interest_padding ms-5 me-5">
+
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow">
+          <div class="card-body">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+              <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+            </svg>
+            <p class="fw-bolder font_size_title">Law</p>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Criminal & Civil Litigation </li>
+              <li>Legal Research </li>
+              <li>Legal Drafting </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow">
+          <div class="card-body">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+              <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z"/>
+            </svg>
+            <p class="fw-bolder font_size_title">Economics</p>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Microeconomics </li>
+              <li>Macroeconomics </li>
+              <li>Economic Analysis & Application</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow">
+          <div class="card-body">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+              <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+            </svg>
+            <p class="fw-bolder font_size_title">Coding</p>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Algorithm & Data Structure </li>
+              <li>Data Analysis </li>
+              <li>Web Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="achivements">
+  <div class="container-fluid">
+    <div>
+      <div class="text_container">
+        <p class="fs-1 fw-bolder text_center">Achivements</p>
+        <div class="line"></div>
+      </div>
+      <p class="text_center">Collection of Certificate</p>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      {% for cert in ln_cert %}
+      <div class="col">
+        <div class="card shadow-sm ms-5 me-5">
+          <img 
+          src= "{{cert[3]}}"
+          class="custom_img_size"
+          alt="card image0"
+          width="1px"
+          height="1px">
+          <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+          <div class="card-body">
+            <p class="fw-bold">{{cert[0]}}</p>
+            <p class="card-text">{{cert[1]}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.open('{{ cert[4] }}', '_blank')">View</button>
+              </div>
+              <small class="text-body-secondary">since {{cert[2]}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container-fluid">
+    <div class="row mt-5 contact_padding">
+      <div class="text_container ">
+        <p class="fs-1 fw-bolder text_center">Contact Me!</p>
+        <div class="line"></div>
+      </div>
+      <div class="col-12 col-md-8 mb-3 ps-5">
+        <form action="/submit" method="post">
+          <label class="form-label pt-3"><strong>Subject:</strong></label>
+          <textarea class="form-control fixed_textarea" name="subject" id="subject" rows="1" required></textarea>
+
+          <label class="form-label pt-3"><strong>Your Name:</strong></label>
+          <textarea class="form-control fixed_textarea" name="name" id="name" rows="1" required></textarea>
+
+          <label class="form-label pt-3"><strong>Email Address:</strong></label>
+          <input type="email" class="form-control fixed_textarea" name="email" id="email" placeholder="name@example.com" required>
+
+          <label class="form-label pt-3"><strong>Content:</strong></label>
+          <textarea class="form-control fixed_textarea" name="content" id="content" rows="5" required></textarea>
+          <div class="d-flex justify-content-end">
+            <button type="submit"id="successModal" class="btn btn-warning text-white mt-3 btn-lg">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-md-4 mb-3 mt-5 pe-5 ps-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="orange" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+          <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+        </svg>
+        <p class="text_align pt-2">No. 123, Jalan New York City, Taman McDonald, 84900 Tangkak, Johor, Malaysia.</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="orange" class="bi bi-envelope-at-fill mt-3" viewBox="0 0 16 16">
+          <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+          <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+        </svg>
+        <p class="text_align pt-2">lau010416@gmail.com</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="orange" class="bi bi-telephone mt-3" viewBox="0 0 16 16">
+          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+        </svg>
+        <p class="text_align pt-2">+6011 20916305</p>
+
+        <a href="https://www.linkedin.com/in/laujh0416/" target="_blank" title="LinkedIn" class="icon_link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="blue" class="bi bi-linkedin mt-3" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/jiahui.lau.5/" target="_blank" title="Facebook" class="icon_link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="blue" class="bi bi-facebook mt-3 ms-3" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/laujh3131" target="_blank" title="Instagram" class="icon_link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="purple" class="bi bi-instagram mt-3 ms-3" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="footer">
+  <div class="container">
+    <footer class="py-3 my-4">
+      <p class="text-center text-body-secondary">© 2024 All rights reserved to Lau Jia Hui</p>
+    </footer>
+  </div>
+</section>
+{%include "footer.html"%}
