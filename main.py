@@ -1,9 +1,12 @@
 from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap5
 import smtplib
+import os
 
 app = Flask(__name__)
-app.config["SECRET KEY"] = "DAY83PROJECT"
+secret_key = os.environ.get("secret_key")
+password = os.environ.get("password")
+app.config["SECRET KEY"] = secret_key
 Bootstrap5(app)
 
 
@@ -36,7 +39,7 @@ def submit():
     email = request.form.get("email")
     content = request.form.get("content")
 
-    my_email = "lau010416@gmail.com"
+    my_email = os.environ.get("email")
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(user=my_email, password="gwlt aety hglo qply")
